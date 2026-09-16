@@ -1,0 +1,4 @@
+interface:
+  display_name: "Feature Lifecycle"
+  short_description: "Plan, build, validate, review, and release repository features"
+  default_prompt: "Use $feature-lifecycle to take this feature from inspection through a reviewed pull request."
