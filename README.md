@@ -6,13 +6,19 @@ It is stack-agnostic by default. For repositories derived from the StagePilot bo
 
 ## Install
 
-Clone the repository into the local Codex skills directory:
+Install it globally for Codex:
 
 ```powershell
-git clone https://github.com/erwancodes/feature-lifecycle-skill.git "$env:USERPROFILE\.codex\skills\feature-lifecycle"
+npx skills add erwancodes/feature-lifecycle-skill --skill feature-lifecycle --global --agent codex --copy -y
 ```
 
-Restart Codex or begin a new task, then invoke it with:
+Or use the interactive installer, which lets you choose the target agent and scope:
+
+```powershell
+npx skills add erwancodes/feature-lifecycle-skill
+```
+
+Begin a new task, then invoke it with:
 
 ```text
 $feature-lifecycle
